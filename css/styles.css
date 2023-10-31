@@ -128,8 +128,8 @@
     border: none;
     border-radius: 10px;
   }
-  .contact-us-bth:hover, 
-  .contact-us-bth:focus {
+  .contact-us-btn:hover, 
+  .contact-us-btn:focus {
     opacity: 0.7;
     cursor: pointer;
   }
