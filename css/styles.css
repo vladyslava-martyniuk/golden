@@ -103,6 +103,25 @@
     line-height: 4.16;
     letter-spacing: -0.45px;
   }
+  .services-item::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 69px;
+    border: 3px solid var(--accent-color);
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url(../images/servises_svg\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 38 38;
+  } 
+  .services-item:nth-child(2)::before{
+    background-image: url(../images/servises_svg\ 2.svg)
+  }
+  .services-item:nth-child(3)::before{
+    background-image: url(../images/servises_svg\ 3.svg)
+  }
   .services-item-text {
     color: #777;
     font-family: RobotoSlab;
@@ -116,7 +135,8 @@
       padding-bottom: 115px;
   }
   .contact-us-title {
-      color: #FFF;
+      margin-bottom: 114px;
+    color: #FFF;
           font-size: 40px;
           line-height: normal;
           letter-spacing: -1px;
@@ -125,6 +145,7 @@
   }
   .contact-us-form {
     display: flex;
+   justify-content: center;
     align-items: center;
    gap: 28px;
    flex-wrap: wrap;
@@ -135,24 +156,8 @@
   gap: 28px;
   align-items: center;
   }
-  .contact-us-input {
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: -0.35px;
-    text-transform: uppercase;
-    display: flex;
-    gap: 28px;
-    padding: 12px 20px 21px;
-  }
 
-  .contact-us-input {
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: -0.35px;
-    text-transform: uppercase;
-    width: 455px;
-    padding: 12px 20px 21px;
-  }
+  
   .contact-us-input {
     font-size: 14px;
     font-weight: 700;
@@ -160,8 +165,9 @@
     text-transform: uppercase;
     display: flex;
     gap: 28px;
-    padding: 12px 20px 21px;
-    flex-basis: 455px;
+    padding: 11px 20px 20px;
+    width: 455px;
+  
   }  
   .contact-us-textarea {
     font-size: 14px;
@@ -174,6 +180,15 @@
     width: 458px;
     height: 212px;
   }
+  .contact-us-input,
+.contact-us-textarea {
+  border: 2px solid transparent;
+}
+contact-us-input:hover,.contact-us-input:focus,
+.contact-us-textarea:hover, .contact-us-textarea:focus {
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
   .contact-us-input::placeholder, 
   .contact-us-textarea::placeholder {
     color: #BBB;
@@ -184,6 +199,7 @@
       text-transform: uppercase;
   }
   .contact-us-btn{
+  
     color: #fff;
     font-family: Montserrat;
     font-size: 18px;
