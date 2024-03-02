@@ -1,0 +1,99 @@
+.contact-us {
+    background-color: var(--main-color);
+    padding-top: 92px;
+    padding-bottom: 115px;
+}
+.contact-us-title {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.87;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+.contact-us-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.contact-us-form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.contact-us-input {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.35px;
+    text-transform: uppercase;
+    display: flex;
+    gap: 28px;
+    padding: 12px 20px 21px;
+    width: 455px;
+    outline: none;
+    transition: border-color 550ms ease-in;
+}
+
+.contact-us-input::placeholder {
+    color: #bbb;
+    text-transform: uppercase;
+}
+
+.contact-us-textarea {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.35px;
+    text-transform: uppercase;
+    padding-top: 14px;
+    padding-left: 22px;
+    resize: none;
+    width: 458px;
+    height: 212px;
+    outline: none;
+    transition: border-color 550ms ease-in;
+}
+
+.contact-us-comment::placeholder {
+    color: #bbb;
+    text-transform: uppercase;
+}
+
+.contact-us-input,
+.contact-us-textarea {
+    /* задати початкові дані для рамки та зробити її прозорою, щоб при ефекті не стрибало */
+    border: 2px solid transparent;
+}
+
+.contact-us-input:hover,
+.contact-us-input:focus,
+.contact-us-textarea:hover,
+.contact-us-textarea:focus {
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.contact-us-btn {
+    width: 242px;
+    height: 68px;
+    background-color: var(--accent-color);
+    font-family: Montserrat;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 18px 33px 28px;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 29px;
+}
+
+.contact-us-submit:hover,
+.contact-us-submit:focus {
+    cursor: pointer;
+    opacity: 0.7;
+}
